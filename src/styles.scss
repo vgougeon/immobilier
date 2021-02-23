@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'src/app/styles/variables';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+input {
+    height: 2rem;
+    padding: 0 10px;
+    background: white;
+    outline: none;
+    border: 1px solid darken($background, 15%);
+    margin-bottom: 1rem;
+    &:focus-within {
+        border: 1px solid $primary;
+    }
+    &[type="submit"], &[type="button"] {
+        background: $primary;
+        color: white;
+        cursor: pointer;
+        width: fit-content;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        &:hover {
+            background: darken($primary, 5%);
+        }
+    }
+}
+
+.error {
+    color: red;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+* {
+    box-sizing: border-box;
+}

@@ -1,0 +1,21 @@
+<header>
+    <h1>IMMO<span>DEPOT</span></h1>
+    <section id="auth">
+        <ng-container *ngIf="user; else login">
+            <div class="auth-head">
+                <div class="auth-head-item">
+                    {{ user.username }}
+                </div>
+                <div class="auth-head-item clickable" (click)="logout()">
+                    <span class="error">OFF</span>
+                </div>
+            </div>
+        </ng-container>
+        <ng-template #login>
+            <div class="auth-head">
+                <a (click)="goToLogin()" class="auth-head-item clickable">Connexion</a>
+            </div>
+        </ng-template>
+        
+    </section>
+</header>

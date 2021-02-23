@@ -1,0 +1,10 @@
+<ng-container *ngIf="user">
+    <h2>Mes propriétés</h2>
+    <div class="grid">
+        <app-house *ngFor="let house of houses" [house]="house" (sell)="sell(house)"></app-house>
+    </div>
+    <div class="properties">
+        <span>Nombre de propriétés : <b>{{ houses.length }}</b></span>
+        <span>Solde : <b> {{ user.balance.toFixed(2) }}€</b></span>
+    </div>
+</ng-container>

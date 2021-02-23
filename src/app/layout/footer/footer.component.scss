@@ -1,0 +1,13 @@
+@import '/src/app/styles/variables';
+
+:host {
+    margin-top: auto;
+    #top {
+        background: $dark;
+        min-height: 7rem;
+    }
+    #bottom {
+        background: darken($dark, 5%);
+        min-height: 2.5rem;
+    }
+}

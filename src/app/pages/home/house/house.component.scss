@@ -1,0 +1,13 @@
+:host {
+    .house {
+        width: 100%;
+        border: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        padding: .7rem 0;
+
+        h3 { margin: 0 .8rem;}
+        span { margin: 0 .8rem; font-weight: 300; font-size: .9rem; clear: both}
+        .sell { margin: 0 .8rem;}
+    }
+}

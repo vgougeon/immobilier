@@ -1,0 +1,7 @@
+<div class="house">
+    <h3>{{ house.name }}</h3>
+    <span>Propriété de {{ owner.username }}</span>
+    <span>Prix: {{ house.price.toFixed(2) }} €</span>
+    <span>Adresse: {{ house.address }}</span>
+    <input (click)="sellHouse()" type="button" value="Vendre" class="sell" />
+</div>

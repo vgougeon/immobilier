@@ -1,0 +1,30 @@
+@import '/src/app/styles/variables';
+:host {
+    form {
+        margin: 3rem auto;
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border: 1px solid darken($background, 12%);
+        padding: 1rem;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        margin: 0;
+    }
+    span {
+        font-weight: 300;
+        font-size: .8rem;
+        margin-bottom: 1rem;
+    }
+
+    input[type="submit"] {
+        margin-left: auto;
+    }
+    .hack {
+        background: rgb(36, 37, 41);
+        margin-left: .5rem;
+    }
+}
