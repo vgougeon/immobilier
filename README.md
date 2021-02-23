@@ -5,7 +5,7 @@ Voici mon TP Angular, pour le run il faut
 ng serve
 ```
 
-Pour les comptes utilisateurs, j'ai ajouté un boutton **"Hacker Vincent"** pour se connecter automatiquement sur un utilisateur. Sinon, **voici les 3 users**:
+Pour les comptes utilisateurs, j'ai ajouté un bouton **"Hacker Vincent"** pour se connecter automatiquement sur un utilisateur. Sinon, **voici les 3 users**:
 
 | Username        | Password |
 | :-------------: |:-------------:|
