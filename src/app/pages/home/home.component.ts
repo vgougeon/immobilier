@@ -3,7 +3,6 @@ import { IHouse } from 'src/app/shared/interfaces/house.interface';
 import { AuthService } from 'src/app/shared/services/auth.service';
 import { HousesService } from 'src/app/shared/services/houses.service';
 import { map, mergeMap } from 'rxjs/operators';
-import { userInfo } from 'node:os';
 import { combineLatest } from 'rxjs';
 import { IUser } from 'src/app/shared/interfaces/user.interface';
 
